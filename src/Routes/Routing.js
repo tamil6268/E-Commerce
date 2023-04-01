@@ -9,7 +9,6 @@ import Accessories from "../Components/Accessories";
 // import Signup from '../Components/SignUp';
 // import Signin from '../Components/SignIn';
 import Error from "../Components/Error";
-import TopBar from "../StaticComp/TopBar";
 import Heading from "../StaticComp/Heading";
 import Nav from "../StaticComp/Nav";
 import FRS from "../StaticComp/FRS";
