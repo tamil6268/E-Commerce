@@ -27,7 +27,7 @@ const HotProducts = () => {
       });
     }
     getData()
-  },[data])
+  },[])
     
   const Loading = () => {
     return (

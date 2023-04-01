@@ -3,7 +3,7 @@ import axios from 'axios';
 import {useDispatch} from 'react-redux';
 import {AddingtoCart} from '../Redux/Slice';
 import Loading from '../StaticComp/Loader'
-import {useNavigate} from 'react-router-dom';
+import {useNavigate} from 'react-router-dom'
 const Store=()=>{
     const [data, setData] = useState([])
     const [loading,setLoading]=useState(true)
