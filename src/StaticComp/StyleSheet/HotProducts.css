@@ -39,7 +39,7 @@
 } */
 #hot{
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     border: 1px solid red;
     border-radius: 5px;
     background-color: red;

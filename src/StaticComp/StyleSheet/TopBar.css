@@ -34,7 +34,7 @@ select option{
 #time{
     display: flex;
     flex-direction: column;
-    justify-content:end ;
+    justify-content:flex-end ;
     align-items: center;
     border: 1px solid thistle;
     padding: 5px;
