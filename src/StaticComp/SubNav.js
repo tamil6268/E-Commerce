@@ -4,7 +4,7 @@ const SubNav=()=>{
     return (
         <div>
             <div id="subNav">
-                <div id="subNav-in1">All</div>
+                <div id="subNav-in">All</div>
                 <div id="subNav-in">Mac</div>
                 <div id="subNav-in">iPhone</div>
                 <div id="subNav-in">iPad</div>

@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import {Link} from 'react-router-dom';
-import Skeleton from 'react-loading-skeleton';
 import Loading from '../StaticComp/Loader';
 import {useDispatch} from 'react-redux';
 import {AddingtoCart} from '../Redux/Slice';
@@ -16,7 +14,7 @@ const Accessories = () => {
   useEffect(() => {
     setLoading(true);
     axios
-      .get("http://localhost:8089/product")
+      .get("https://e-commerce-tamil.onrender.com/product")
       .then((resolve) => {
         console.log(resolve.data);
         setProduct(resolve.data);

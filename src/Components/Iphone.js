@@ -13,7 +13,7 @@ const Iphone = () => {
   useEffect(() => {
     setLoading(true)
     axios
-      .get("http://localhost:8089/Product")
+      .get("https://e-commerce-tamil.onrender.com/Product")
       .then((resolve) => {
         console.log(resolve.data);
         setProduct(resolve.data);

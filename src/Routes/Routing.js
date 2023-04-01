@@ -29,7 +29,7 @@ const Routing = () => {
   const dispatch=useDispatch();
   useEffect(()=>{
      dispatch(getTotals())
-  },[cart,dispatch])
+  },[cart])
   return (
     <div id="body1">
       <BrowserRouter>
@@ -48,7 +48,6 @@ const Routing = () => {
           <Route path="/accessories" element={<Accessories />} />
           <Route path="/product/:id" element={<Products />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="*" element={<Error />} />
         </Routes>
           <SubTitle title="BEST SELLER" />
           <SubNav />
@@ -63,3 +62,6 @@ const Routing = () => {
   );
 };
 export default Routing;
+
+
+<Route path="*" element={<Error />} />

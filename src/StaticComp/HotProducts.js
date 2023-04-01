@@ -15,7 +15,7 @@ const HotProducts = () => {
   useEffect(async()=>{
     setLoading(true);
     await axios
-      .get("http://localhost:8089/Product")
+      .get("https://e-commerce-tamil.onrender.com/Product")
       .then((resolve) => {
         console.log(resolve.data);
         setData(resolve.data);
