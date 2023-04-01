@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
 import Loading from '../StaticComp/Loader';
 import {useDispatch} from 'react-redux';
 import {AddingtoCart} from '../Redux/Slice';

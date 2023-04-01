@@ -25,7 +25,22 @@
 }
 #marquee{
     background-color: bisque;
+    background-repeat:round ;
     padding: 5px;
+    height: 21px;
+    overflow: hidden;
+    width: 100%;
+    z-index: +10;
+    animation:text 20s linear alternate;
+}
+@keyframes text{
+    0%{
+        transform: translateX(1000px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+    
 }
 #btn{
     display:flex;

@@ -1,8 +1,8 @@
 import '../App.css';
-import React, { useState, useEffect } from "react";
+import React, { useState} from "react";
 import Loading from '../StaticComp/Loader'
 import { useParams,useLocation } from "react-router-dom";
-import {Rating,Ratings} from '../StaticComp/StarRating';
+import {Ratings} from '../StaticComp/StarRating';
 import {useDispatch} from 'react-redux';
 import {AddingtoCart} from '../Redux/Slice';
 import {useNavigate} from 'react-router-dom';
