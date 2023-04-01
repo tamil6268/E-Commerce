@@ -1,0 +1,30 @@
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+    background-color: rgb(241, 237, 169);
+    padding: 18px;
+}
+#footer #two .one{
+    color: rgb(112, 116, 116);
+}
+#two #content{
+    text-align: left;
+}
+.two{
+    border-left: 1px solid rgb(182, 57, 57);
+    border-right: 1px solid rgb(196, 66, 66);
+    padding-left: 30px;
+    padding-right: 30px;
+}
+#icon{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 5px;
+}
+#MoneyLink{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}

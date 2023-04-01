@@ -1,0 +1,44 @@
+#TopBar,#right{
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#TopBar{
+    border-bottom: 2px solid rgb(218, 213, 213);
+    background-color: rgb(245, 247, 248);
+}
+#left{
+    display: flex;
+}
+#left-in select{
+    margin-left:20px ;
+}
+select option{
+    padding: 5px;
+}
+#right{
+    padding: 5px;
+    align-items: center;
+}
+#right-in{
+    margin-left:10px ;
+    margin-right:10px ;
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    align-items: center;
+}
+#right-in img{
+    margin: 5px;
+}
+#time{
+    display: flex;
+    flex-direction: column;
+    justify-content:end ;
+    align-items: center;
+    border: 1px solid thistle;
+    padding: 5px;
+    font-size: 13px;
+    position: absolute;
+    right: 10px;
+}

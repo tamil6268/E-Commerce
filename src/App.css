@@ -1,38 +1,166 @@
-.App {
-  text-align: center;
+#sticky{
+    position:fixed;
+    top:0px;
+    left:0px;
+    z-index: +10;
+}
+#non-sticky{
+    position: relative;
+    top: 8rem;
+}
+/*Product - Details Page*/
+
+#DetailsProduct{
+    object-fit: contain;
+    padding: 10px;
+    margin-right: 30px;
+}
+#prodectDetails{
+    width: 70vw;
+    padding-right:80px ;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background: linear-gradient(220deg,pink ,skyblue);
+}
+#Name{
+    font-size: 36px;
+}
+#Rating{
+    font-size: 33px;
+}
+#OfferPrice{
+    font-size: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/*Cart Page*/
+
+#cartItems{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 10px;
+    padding-top: 20px;
+    text-align: center;
+    background-color: rgba(173, 177, 230, 0.534);
+}
+#cartContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+}
+#Cartlist{
+    padding: 50px;
+    margin: 10px;
+    font-size: xx-large;
+}
+#reboot{
+    width: 100%;
+    height: 80px;
+    margin-bottom:20px ;
+    margin-top:20px ;
+}
+#linkStore{
+    background-color: rgba(35, 88, 235, 0.795);
+    color: white;
+    border-radius: 50%;
+    padding: 20px;
+    margin: 10px;
+    text-decoration: none;
+}
+#linkStore:hover{
+    background-color: rgb(15, 75, 240);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#cartbox,#cartbox2,#productdetails,#cartQuantity{
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    align-items:center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#cartbox2{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: 20px;
 }
-
-.App-link {
-  color: #61dafb;
+#productdetails{
+    padding-right: 30px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.amount{
+    font-size: large;
+    font-weight: 600;
+}
+#cartQuantity{
+    margin: 20px;
+    padding: 50px;
+}
+.nutton,.nutton1{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+}
+.nutton{
+    background-color: red;
+}
+.nutton1{
+    background-color: green;
+}
+.amountTotal{
+    width: 100%;
+    height:90px;
+    text-align: center;
+    background-color: rgb(19, 160, 216);
+    color:navy;
+}
+h4 h2{
+    color:white;
+}
+#btnthree button{
+    width: 300px;
+    height: 40px;
+    color: white;
+    border: none;
+    margin: 10px;
+    margin-bottom: 20px;
+}
+#btnthree button:nth-child(1){
+    background-color: tomato;
+}
+#btnthree button:nth-child(2){
+    background-color: green;
+}
+#btnthree button:nth-child(3){
+    background-color: rgb(0, 102, 255);
+}
+#btnthree button:nth-child(1):hover{
+    background-color: red;
+    font-size: 18px;
+    padding: 10px;
+}
+#btnthree button:nth-child(2):hover{
+    background-color: rgb(22, 155, 5);
+    font-size: 18px;
+    padding: 10px;
+}
+#btnthree button:nth-child(3):hover{
+    background-color: rgba(5, 18, 199, 0.966);
+    font-size: 18px;
+    padding: 10px;
+}
+#remove{
+    padding: 10px;
+    background-color: lightslategray;
+    border: none;
+}
+#remove:hover{
+    background-color: black;
+    color: white;
 }

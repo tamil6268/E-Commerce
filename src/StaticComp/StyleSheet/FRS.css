@@ -1,0 +1,14 @@
+#part{
+    display: flex;
+    justify-content: space-evenly;
+    border-top: 1px solid thistle;
+    border-bottom: 1px solid thistle;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    background-color: lavender;
+}
+#content{
+    text-align: center;
+    width: 300px;
+}

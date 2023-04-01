@@ -1,0 +1,15 @@
+#Ads{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* border: 1px solid rgb(231, 225, 231); */
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#Ads-in{
+    border-top: 3px solid thistle;
+    border-bottom: 3px solid thistle;
+    padding-top:20px ;
+    padding-bottom:20px ;
+}
