@@ -12,9 +12,10 @@ const HotProducts = () => {
     const navigate=useNavigate();
 
 
-  useEffect(async()=>{
+  useEffect(()=>{
     setLoading(true);
-    await axios
+    const getData=async()=>{
+      await axios
       .get("https://e-commerce-tamil.onrender.com/Product")
       .then((resolve) => {
         console.log(resolve.data);
@@ -24,7 +25,9 @@ const HotProducts = () => {
       .catch((error) => {
         console.log(error);
       });
-  },[])
+    }
+    getData()
+  },[data])
     
   const Loading = () => {
     return (
