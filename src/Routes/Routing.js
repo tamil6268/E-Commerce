@@ -27,7 +27,7 @@ const Routing = () => {
   const dispatch=useDispatch();
   useEffect(()=>{
     dispatch(getTotals())
-  },[products])
+  },[products,dispatch])
   return (
     <div id="body1">
       <BrowserRouter>
