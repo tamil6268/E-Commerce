@@ -24,7 +24,7 @@ import { useSelector,useDispatch } from "react-redux";
 import {  getTotals } from "../Redux/Slice";
 import {useEffect} from 'react';
 const Routing = () => {
-  const cart = useSelector((state) => state.cart);
+  const cart = useSelector((state) => state.cart.products);
   const dispatch=useDispatch();
   useEffect(()=>{
      dispatch(getTotals())
