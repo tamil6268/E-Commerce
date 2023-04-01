@@ -20,15 +20,14 @@ import Ads from "../StaticComp/Ads";
 import Products from "../Components/Products";
 import Cart from "../Components/Cart";
 
-import { useSelector,useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 import {  getTotals } from "../Redux/Slice";
 import {useEffect} from 'react';
 const Routing = () => {
-  const cart = useSelector((state) => state.cart);
   const dispatch=useDispatch();
   useEffect(()=>{
      dispatch(getTotals())
-  },[])
+  })
   return (
     <div id="body1">
       <BrowserRouter>
