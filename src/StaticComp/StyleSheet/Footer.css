@@ -28,3 +28,11 @@
     justify-content: flex-end;
     align-items: center;
 }
+@media screen and (max-width:400px){
+    #footer{
+        flex-direction: column;
+    }  
+    .footer{
+        display: none;
+    } 
+}

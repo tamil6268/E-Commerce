@@ -2,7 +2,7 @@ import './StyleSheet/Last.css';
 
 const Last=()=>{
     return(
-        <div id="footer">
+        <div id="footer" className="footer">
             <div id="move">
                 <h4>Information</h4>
                 <div id="shade">About Us</div>

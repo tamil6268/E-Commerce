@@ -12,3 +12,11 @@
     text-align: center;
     width: 300px;
 }
+@media screen and (max-width:400px){
+    #part{
+        flex-direction: column;
+    }
+    #content{
+        margin-bottom: 10px;
+    }
+}

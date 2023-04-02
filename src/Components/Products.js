@@ -31,7 +31,7 @@ const Products = () => {
         <div >
           <img src={data.url} id="DetailsProduct" width={450} height={450} alt="404-ERROR"/>
         </div>
-        <div >
+        <div id="content1">
             <h2 id="Name">{data.Name}</h2>
             <p>{data.Catagory}</p>
             <div id="Rating"><span>Rating - {<Ratings/>} </span></div>
@@ -52,8 +52,8 @@ const Products = () => {
            {loading ? <Loading/> : <ShowDetailedProduct/>}
 
            <br/>
-          <div>
-          <button id="cart1" onClick={()=>navigate(-1)} style={{fontSize:"27px"}}>Back</button>
+          <div id="green">
+          <button id="cart1" className="btn" onClick={()=>navigate(-1)} style={{fontSize:"27px"}}>Back</button>
           </div>
     </div>
   );

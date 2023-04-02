@@ -40,7 +40,7 @@ const Cart = () => {
           <div >
          <hr/>
             <div id="cartbox">
-              <div><h3>S.NO</h3></div>
+              <div id="sn"><h3>S.NO</h3></div>
               <div><h3>PRODUCT</h3></div>
               <div><h3>PRICE</h3></div>
               <div><h3>QUANTITY</h3></div>
@@ -50,7 +50,7 @@ const Cart = () => {
             <div >
               {cart.products?.map((item,index) => (
                 <div key={item.id} id="cartbox2">
-                  <div>{index+1}</div>
+                  <div id="sn">{index+1}</div>
                   <div id="productdetails">
                     <img src={item.url} width={180} height={180} alt="404_ERROR" />
                     <div>
@@ -61,7 +61,7 @@ const Cart = () => {
                     </div>
                   </div>
                   <div>
-                    <div className="amount">$ {item.New_Price}</div>
+                    <div className="amount1">$ {item.New_Price}</div>
                   </div>
                   <div id="cartQuantity">
                       <div><button className="nutton" onClick={()=>decreaseItem(item)}>-</button></div>
@@ -69,7 +69,7 @@ const Cart = () => {
                       <div><button className="nutton1"  onClick={()=>increaseItem(item)}>+</button></div>
                   </div>
 
-                  <div className="amount">
+                  <div className="amount2">
                     ${item.New_Price*item.productQuantity}
                   </div>
                 </div>

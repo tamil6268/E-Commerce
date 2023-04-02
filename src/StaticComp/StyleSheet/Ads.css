@@ -13,3 +13,21 @@
     padding-top:20px ;
     padding-bottom:20px ;
 }
+/*MEDIA QUERY*/
+@media screen and (max-width:400px){
+    #Ads{
+        width: 400px;
+        flex-direction: column;
+        padding: 0px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #triangle,#triangle1{
+        display: none;
+    }
+    #AdsImg{
+        width: 200px;
+        transform: translateY(-90px);
+        transform: translateX(-290px);
+    }
+}

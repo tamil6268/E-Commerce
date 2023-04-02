@@ -13,7 +13,7 @@
     align-items: center;
 }
 #title{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif,'Times New Roman', Times, serif;
     letter-spacing: 3px;
 }
 .i{
@@ -28,6 +28,7 @@
     background-repeat:round ;
     padding: 5px;
     height: 21px;
+    width: 100%;
     overflow: hidden;
     width: 100%;
     z-index: +10;
@@ -78,4 +79,24 @@
     right: 15px;
     text-align: center;
     align-items: center;
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width:400px){
+    #body{
+       width: 360px;
+       justify-content:flex-start;
+    }
+    #btn{
+        display:flex;
+        justify-content: flex-start;
+        width: 45%;
+        position: absolute;
+        top: 24px;
+        right: 20px;
+    }
+    #marquee{
+        visibility: hidden;
+    }
 }
