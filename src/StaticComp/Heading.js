@@ -1,6 +1,6 @@
 import './StyleSheet/Heading.css'
 import {useSelector} from 'react-redux';
-import {useNavigate} from 'react-router-dom';
+import {useNavigate,Link} from 'react-router-dom';
 
 const Heading=()=>{
     const {cartTotalQuantity}=useSelector(state=>state.cart)
@@ -17,7 +17,7 @@ const Heading=()=>{
             <b className="shop"> SHOP</b></div>
         </div>
             <div id="btn">
-            <button style={{display:"flex",alignItems:"center",justifyContent:"center"}}><img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZTKmyAs2TcnVnfF0qO4HPwBKVP6VorXa8nw&usqp=CAU"} width={30} height={30} alt="404_ERROR" /></button>
+            <Link to="/user"><button style={{display:"flex",alignItems:"center",justifyContent:"center"}}><img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZTKmyAs2TcnVnfF0qO4HPwBKVP6VorXa8nw&usqp=CAU"} width={30} height={30} alt="404_ERROR" /></button></Link>
             <button style={{display:"flex",alignItems:"center",justifyContent:"center"}} onClick={CartList}><img src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbrFXxmNkpIPqUArp-tmDsjrXrmkShAntIRw&usqp=CAU"} width={30} height={30} alt="404_ERROR" /></button><span id="cartcount">{cartTotalQuantity}</span>
             </div>
         <div direction="right-left" id="marquee">

@@ -164,6 +164,27 @@ h4 h2{
     background-color: black;
     color: white;
 }
+/*Login*/
+#user{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(220deg,pink ,skyblue);
+    padding: 50px;
+}
+#username,#password{
+    border-bottom:1px solid black;
+    background-color: transparent;
+}
+#pageLog{
+    border: 1px black;
+    border-style: groove;
+    padding: 20px;
+    margin: 10px;
+}
+#head{
+    text-decoration: underline;
+}
 
 /*MEDIA QUERY*/
 
