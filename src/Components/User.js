@@ -54,11 +54,13 @@ export const Login = () => {
 };
 const User=()=>{
   const [login,setLogin]=useState(true)
+  useEffect(()=>{
+     setLogin()
+  },[])
   return(
     <div>
           {login?<Register/>
           :<Login/>}
-          {setLogin()}
     </div>
   )
 }
