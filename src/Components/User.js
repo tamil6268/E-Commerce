@@ -58,6 +58,7 @@ const User=()=>{
     <div>
           {login?<Register/>
           :<Login/>}
+          {setLogin()}
     </div>
   )
 }
