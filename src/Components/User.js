@@ -6,17 +6,18 @@ export const Register = () => {
   console.log("login response :",data)
   useEffect(()=>{
     axios
-         .post("http://localhost:8089/register")
+         .post("https://e-commerce-tamil.onrender.com/register")
          .then((res)=>{
             console.log(res)
             setData(res);
          })
   },[data])
   return (
-    <div id="pageLog">
+    <div id="user">
+       <div id="pageLog">
       <h2  id="head">SignUp</h2>
-      <form action="http://localhost:8089/register" method="post">
-        USERNAME : <input type="text" id="username" name="Username" required />
+      <form action="https://e-commerce-tamil.onrender.com/register" method="post">
+        EMAIL : <input type="email" id="username" name="Username" required />
         <br />
         <br />
         PASSWORD :
@@ -25,17 +26,19 @@ export const Register = () => {
         <br />
         <input type="submit" value="Register" id="cart1" />
         <input type="reset" value="Reset" id="cart"/>
-        <div>If Already Registerd ? <Link>login</Link></div>
+        <div>If Already Registerd ? <Link to="/user/login">login</Link></div>
       </form>
+    </div>
     </div>
   );
 };
 export const Login = () => {
   return (
+    <div id="user">
     <div id="pageLog">
       <h2 id="head">SignIn</h2>
-      <form action="http://localhost:8089/login" method="post">
-        USERNAME : <input type="text" id="username" name="Username" required />
+      <form action="https://e-commerce-tamil.onrender.com/login" method="post">
+        EMAIL : <input type="email" id="username" name="Username" required />
         <br />
         <br />
         PASSWORD :
@@ -44,16 +47,17 @@ export const Login = () => {
         <br />
         <input type="submit" value="Login" id="cart1"/>
         <input type="reset" value="Reset" id="cart"/>
-        <div><Link>register</Link> | <Link>forget password</Link></div>
+        <div><Link to="/user/register">register</Link> | <Link>forget password</Link></div>
       </form>
-    </div>
+    </div></div>
   );
 };
 const User=()=>{
+  const [login,setLogin]=useState(true)
   return(
-    <div id="user">
-          <Register/>
-          <Login/>
+    <div>
+          {login?<Register/>
+          :<Login/>}
     </div>
   )
 }

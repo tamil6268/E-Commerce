@@ -43,6 +43,7 @@ const MacBook = () => {
                 width={160}
                 height={150}
                 id="productImg"
+                onClick={()=>handleBuy(item)}
               />
               <div style={{overflow:"hidden"}}>
                 <strong>{item.Name}</strong>

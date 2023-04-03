@@ -7,6 +7,7 @@ import Iphone from "../Components/Iphone";
 import MacBook from "../Components/MacBook";
 import Accessories from "../Components/Accessories";
 import User from '../Components/User';
+import {Login,Register} from '../Components/User';
 import Error from "../Components/Error";
 import Heading from "../StaticComp/Heading";
 import Nav from "../StaticComp/Nav";
@@ -46,6 +47,8 @@ const Routing = () => {
           <Route path="/product/:id" element={<Products />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/user" element={<User />} />
+          <Route path="/user/login" element={<Login />} />
+          <Route path="/user/register" element={<Register />} />
           <Route path="*" element={<Error />} />
         </Routes>
           <SubTitle title="BEST SELLER" />

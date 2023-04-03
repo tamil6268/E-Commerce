@@ -120,6 +120,10 @@
     background-color: rgb(19, 160, 216);
     color:navy;
 }
+.btn{
+    background-color: blue;
+    color: white;
+}
 h4 h2{
     color:white;
 }
@@ -166,6 +170,7 @@ h4 h2{
 }
 /*Login*/
 #user{
+    height: 70vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -174,13 +179,14 @@ h4 h2{
 }
 #username,#password{
     border-bottom:1px solid black;
-    background-color: transparent;
+    background:linear-gradient(220deg,pink ,skyblue);
 }
 #pageLog{
-    border: 1px black;
-    border-style: groove;
-    padding: 20px;
+    border: 10px groove rgba(155, 128, 128, 0.651);
+    /* border-style: groove; */
+    padding: 50px;
     margin: 10px;
+    background-color:palegoldenrod;
 }
 #head{
     text-decoration: underline;
@@ -237,5 +243,4 @@ h4 h2{
     #sn{
         display:none;
     }
-
 }
