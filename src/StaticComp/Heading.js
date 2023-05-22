@@ -22,8 +22,9 @@ const Heading=()=>{
             </div>
         <div direction="right-left" id="marquee">
         <strong >
-        i-Shop from 1000 Indian <span style={{color:'green'}}> online</span> stores with your Shopping Address. Hassle Free <span style={{color:"gold"}}>worldwide shipping</span> from<span style={{color:"Blue"}}>India at 80%</span> lower rates. <span style={{color:"red"}}>3-6 days delivery</span>.100% Assurance If you face any issue, your money is immediately refunded. Sit back shop on. Paytm Trust Your money is yours.<span style={{color:"Blue"}}>Companies often offer 24/7 support </span> through chatbots (like the Zendesk chat bot), a knowledge base,<span style={{color:'green'}}>live chat,<span style={{color:"black"}}> or </span> embedded messaging</span> .
+        i-Shop from 1000 Indian <span style={{color:'green'}}> online</span> stores with your Shopping Address. Hassle Free <span style={{color:"gold"}}>worldwide shipping</span> from<span style={{color:"Blue"}}>India at 80%</span> lower rates. <span style={{color:"red"}}>3-6 days delivery</span>.100% Assurance If you face 
         </strong>
+        {/* any issue, your money is immediately refunded. Sit back shop on. Paytm Trust Your money is yours.<span style={{color:"Blue"}}>Companies often offer 24/7 support </span> through chatbots (like the Zendesk chat bot), a knowledge base,<span style={{color:'green'}}>live chat,<span style={{color:"black"}}> or </span> embedded messaging</span> . */}
         </div>
         </>
     )
