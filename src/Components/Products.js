@@ -24,12 +24,13 @@ const Products = () => {
        dispatch(AddingtoCart(item))
     }
     const handleBuy=(item)=>{
-      navigate(`/Orders/${item.id}`, { state: { item } })
+      // navigate(`/Orders/${item.id}`, { state: { item } })
+      alert("Product Order ---> Order Id :TX70JUD_U1QX09")
     }
     return(
       <div id="prodectDetails">
         <div >
-          <img src={data.url} id="DetailsProduct" width={450} height={450} alt="404-ERROR"/>
+          <img src={data.url} id="DetailsProduct"  alt="404-ERROR"/>
         </div>
         <div id="content1">
             <h2 id="Name">{data.Name}</h2>

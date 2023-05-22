@@ -11,17 +11,22 @@
 /*Product - Details Page*/
 
 #DetailsProduct{
-    object-fit: contain;
-    padding: 10px;
-    margin-right: 30px;
+    width: 30em;
+    padding-left:5%;
 }
 #prodectDetails{
     width: 70vw;
-    padding-right:80px ;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: center;
     background: linear-gradient(220deg,pink ,skyblue);
+}
+#green{
+    position: relative;
+    left: 150%;
+}
+#content1{
+    padding-left: 40px;
 }
 #Name{
     font-size: 36px;
@@ -195,34 +200,38 @@ h4 h2{
     display: grid;
     grid-template-columns: repeat(auto-fill,250px);
 }
+#green{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 /*MEDIA QUERY*/
 
-@media screen and (max-width:600px){
+@media screen and (max-width:900px){
     .price{
         display: none;
     }
     #prodectDetails{
-        width: 100vw;
-        padding-right:30px ;
-        flex-direction: column;
+       flex-direction: column;
         justify-content:center;
         align-items:flex-start;
         text-align: center;
+        padding-left: 5%;
+        padding-top: 5%;
     }
     #DetailsProduct{
-        object-fit: contain;
-        padding: 0px;
-        padding-top: 30px;
-        margin-right: 10px;
+        width: 65vw;
+    }
+    #green{
+        position: relative;
+        right: 25%;
     }
     #content1{
-        width: 400px;
         text-align: center;
-        padding-left: 20px;
+        padding-left:5%;
         padding-bottom: 20px;
-    }
-    #green button{
-        transform: translateX(180px);
+        width: auto;
     }
     #cartbox2{
         padding: 1px;
@@ -246,5 +255,29 @@ h4 h2{
     }
     #sn{
         display:none;
+    }
+}
+@media screen and (max-width:700px) {
+    #green{
+        position: relative;
+        left: 30%;
+    }
+}
+@media screen and (max-width:800px) {
+    #green{
+        position: relative;
+        left: 50%;
+    }
+}
+@media screen and (max-width:400px) {
+    #green{
+        position: relative;
+        left: 10%;
+    }
+}
+@media screen and (max-width:600px) {
+    #green{
+        position: relative;
+        left: 10%;
     }
 }
