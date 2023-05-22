@@ -9,3 +9,8 @@
 #move h4{
     text-decoration: underline;
 }
+@media screen and (max-width:600px){
+    .footer{
+        flex-direction: column;
+    }
+}

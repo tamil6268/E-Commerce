@@ -91,7 +91,7 @@ const HotProducts = () => {
             })
         )}
       </div>
-      {loading?<div></div>:<div id="load">Load More</div>}
+      {/* {loading?<div></div>:<div id="load">Load More</div>} */}
     </>
   );
 };

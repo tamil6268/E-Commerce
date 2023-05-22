@@ -1,5 +1,5 @@
 import {createSlice} from "@reduxjs/toolkit";
-import {toast} from 'react-toastify';
+
 const initialState={
     products:localStorage.getItem("Added Items")?JSON.parse(localStorage.getItem("Added Items")):[],
     cartTotalQuantity:0,
@@ -14,15 +14,9 @@ const Slice=createSlice({
             const productIndex=state.products.findIndex((item)=>item.id===action.payload.id);
             if(productIndex>=0){
                 state.products[productIndex].productQuantity+=1;
-                toast.info("Added Extra Quantity",{
-                    position:"top-left"
-                })
             }else{
                 const temproryProduct={...action.payload,productQuantity:1}
                 state.products.push(temproryProduct)
-                toast.success(`${action.payload.Name} Added to a cart`,{
-                    position:"top-left"
-                })
             }
            localStorage.setItem("Added Items",JSON.stringify(state.products))//on top  we are using array so we using here json
         },
@@ -32,10 +26,6 @@ const Slice=createSlice({
             )
             state.products=nextCartItem;
             localStorage.setItem("Added Items",JSON.stringify(state.products))
-
-            toast.error(`${action.payload.Name} Removed from the cart`,{
-                position:"top-left"
-            })
         },
         decreaseQuantity:(state,action)=>{
             const itemIndex=state.products.findIndex(
@@ -64,9 +54,8 @@ const Slice=createSlice({
 
                 totalValue.total+=totalItem;
                 totalValue.quantity+=productQuantity;
-
                 return totalValue;
-            },
+            },                         
             {
               total:0,
               quantity:0

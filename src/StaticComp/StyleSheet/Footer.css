@@ -28,11 +28,16 @@
     justify-content: flex-end;
     align-items: center;
 }
-@media screen and (max-width:400px){
+@media screen and (max-width:600px){
     #footer{
         flex-direction: column;
     }  
     .footer{
         display: none;
+    } 
+}
+@media screen and (max-width:910px){
+    #content{
+        width: auto;
     } 
 }

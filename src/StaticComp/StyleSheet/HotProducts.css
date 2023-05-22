@@ -1,9 +1,7 @@
 #section{
-    width: 100%;
-    height: 100%;
     background-color: rgb(188, 233, 188);
     display:grid;
-    grid-template-columns:auto auto auto auto;
+    grid-template-columns:repeat(auto-fill(200px));
     grid-gap: 40px;
     justify-content: center;
     align-items: center;
@@ -137,7 +135,7 @@
 }
 
 /*MEDIA QUERY*/
-@media screen and (max-width:400px){
+@media screen and (max-width:600px){
     #section{
         width: 100vw;
         height: 100%;
@@ -171,7 +169,6 @@
         font-weight: 600;
         margin-top: 10px;
         background-color: rgb(21, 177, 29);
-        transform: translateX(136px);
     }
     #cart{
         display:none;

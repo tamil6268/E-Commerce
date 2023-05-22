@@ -6,7 +6,6 @@
     color: black;
     border: 0.5px solid rgb(252, 249, 252);
     margin-top: 0px;
-    transform: translateY(-5px);
 }
 #Link{
     text-decoration: none;
@@ -26,14 +25,9 @@
 }
 /*MEDIA QUERY*/
 
-@media screen and (max-width:400px){
+@media screen and (max-width:480px){
     #NavBar{
-        width: 400px;
-        height: 50px;
-        justify-content:flex-start;
-        box-sizing: content-box;
-        position: relative;
-        bottom: 27px;
+        justify-content:center;
     }
     #Link{
         color: black;

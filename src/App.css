@@ -83,10 +83,8 @@
     align-items:center;
 }
 #cartbox2{
-    width: 100%;
-    height: 100%;
-    padding: 10px;
-    margin: 20px;
+    padding: 5px;
+    margin: 10px;
 }
 #productdetails{
     padding-right: 30px;
@@ -191,10 +189,18 @@ h4 h2{
 #head{
     text-decoration: underline;
 }
+/* final */
 
+#section{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,250px);
+}
 /*MEDIA QUERY*/
 
-@media screen and (max-width:400px){
+@media screen and (max-width:600px){
+    .price{
+        display: none;
+    }
     #prodectDetails{
         width: 100vw;
         padding-right:30px ;
@@ -219,8 +225,6 @@ h4 h2{
         transform: translateX(180px);
     }
     #cartbox2{
-        width: 100vw;
-        height: 100%;
         padding: 1px;
         margin-bottom: 10px;
     }

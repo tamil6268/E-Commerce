@@ -28,11 +28,10 @@
     background-repeat:round ;
     padding: 5px;
     height: 21px;
-    width: 100%;
-    overflow: hidden;
-    width: 100%;
     z-index: +10;
-    animation:text 20s linear alternate;
+    /* overflow: hidden;
+    width: 100%;
+    animation:text 20s linear alternate; */
 }
 @keyframes text{
     0%{
@@ -83,18 +82,13 @@
 
 /*MEDIA QUERY*/
 
-@media screen and (max-width:400px){
+@media screen and (max-width:600px){
     #body{
-       width: 360px;
        justify-content:flex-start;
     }
     #btn{
         display:flex;
-        justify-content: flex-start;
-        width: 45%;
-        position: absolute;
-        top: 24px;
-        right: 20px;
+        justify-content: flex-end;
     }
     #marquee{
         visibility: hidden;

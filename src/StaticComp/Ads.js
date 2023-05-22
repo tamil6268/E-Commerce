@@ -11,8 +11,8 @@ const Ads = () => {
         <br />
         <div>Shop Now</div>
       </div>
-      <div id="AdsImg">
-        <img src={adsImg} width={700}  height={520}   alt="404_ERROR"/>
+      <div >
+        <img src={adsImg} id="AdsImg" alt="404_ERROR"/>
       </div>
       <div id="triangle1"></div>
     </div>

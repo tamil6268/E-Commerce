@@ -29,14 +29,14 @@ const Routing = () => {
     dispatch(getTotals())
   },[products,dispatch])
   return (
-    <div id="body1">
+    <div >
       <BrowserRouter>
-        <div id="sticky">
+        <div>
           {/* <TopBar /> */}
           <Heading />
           <Nav />
         </div>
-        <div id="non-sticky">
+        <div >
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/store" element={<Store />} />

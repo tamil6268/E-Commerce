@@ -18,7 +18,7 @@ const ImgSlides=()=>{
     return(
         <div id="imageSlide">
             <div id="triangle2"></div>
-             <img id="slide" width={1346} height={400} src={picCollection[pic]} alt=""/>
+             <img id="slide" src={picCollection[pic]} alt=""/>
              <div id="triangle3"></div>
         </div>
     )
