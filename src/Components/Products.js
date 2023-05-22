@@ -25,7 +25,7 @@ const Products = () => {
     }
     const handleBuy=(item)=>{
       // navigate(`/Orders/${item.id}`, { state: { item } })
-      alert("Product Order ---> Order Id :TX70JUD_U1QX09")
+      alert("Order Placed ---> Order Id :TX70JUD_U1QX09")
     }
     return(
       <div id="prodectDetails">

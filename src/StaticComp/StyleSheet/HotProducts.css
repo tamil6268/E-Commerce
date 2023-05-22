@@ -2,7 +2,7 @@
     width: 100vw;
     background-color: rgb(188, 233, 188);
     display:grid;
-    grid-template-columns:repeat(auto-fit(230px));
+    grid-template-columns:repeat(auto-fit(450px));
     grid-gap: 40px;
     justify-content: center;
     align-items: center;
