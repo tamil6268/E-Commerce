@@ -137,8 +137,6 @@
 /*MEDIA QUERY*/
 @media screen and (max-width:600px){
     #section{
-        width: 100vw;
-        height: 100%;
         display:grid;
         grid-template-columns:auto auto;
         grid-gap: 20px;
