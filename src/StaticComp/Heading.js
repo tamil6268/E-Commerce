@@ -12,9 +12,10 @@ const Heading = () => {
   return (
     <>
       <div id="body">
-        <div>
+        <div >
           <i
             class="fa-brands fa-apple fa-bounce fa-2xs"
+            id="apple-icon"
             style={{
               color: "CaptionText",
               position: "relative",
@@ -31,6 +32,7 @@ const Heading = () => {
       <div id="btn">
         <Link to="/user">
           <button
+          id="hide-btn"
             style={{
               display: "flex",
               alignItems: "center",
