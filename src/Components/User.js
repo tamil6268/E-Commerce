@@ -19,10 +19,10 @@ export const Register = () => {
 //   },[data])
   const [state, setState] = useState("");
   const handleCheck = (e) => {
-    setState1(e.target.value);
+    setState(e.target.value);
   };
   const handleIn = () => {
-    if (userData.name === state1) {
+    if (userData.name === state) {
       alert("Successfully logged-in");
     } else {
       alert("Invalid Data");
@@ -51,11 +51,12 @@ export const Register = () => {
 };
 export const Login = () => {
   const [state1, setState1] = useState("");
+  const navigate=useNavigate();
   const handleChange = (e) => {
-    setState(e.target.value);
+    setState1(e.target.value);
   };
   const handleClick = () => {
-    userData.name = state;
+    userData.name = state1;
     console.log(userData);
     navigate('/user/login')
   };
