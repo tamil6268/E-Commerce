@@ -42,7 +42,7 @@ export const Register = () => {
         <input type="password" id="password" name="Password" required />
         <br />
         <br />
-        <input type="submit" value="Register" id="cart1" onClick={handleIn} type="submit"/>
+        <input type="submit" value="Register" id="cart1" onClick={handleIn} />
         <input type="reset" value="Reset" id="cart"/>
         <div>If Already Registerd ? <Link to="/user/login">login</Link></div>
       </form>
