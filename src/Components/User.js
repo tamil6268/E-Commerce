@@ -1,7 +1,7 @@
 import {Link} from 'react-router-dom'
 import {useState,useEffect} from 'react';
 import {useNavigate} from "react-router-dom";
-import axios from 'axios';
+// import axios from 'axios';
   
 const userData = {};
 
@@ -20,6 +20,7 @@ export const Register = () => {
   const [state, setState] = useState("");
   const handleCheck = (e) => {
     setState(e.target.value);
+    setData([]);
   };
   const handleIn = () => {
     if (userData.name === state) {
