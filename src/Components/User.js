@@ -40,7 +40,7 @@ export const Register = () => {
     <div id="user">
        <div id="pageLog">
       <h2  id="head">SignUp</h2>
-      <form action="" method="post">
+      <form action="">
         EMAIL : <input type="email" id="username" name="Username" onChange={handleCheck} required/>
         <br />
         <br />
@@ -61,7 +61,7 @@ export const Login = () => {
     <div id="user">
     <div id="pageLog">
       <h2 id="head">SignIn</h2>
-      <form action="https://e-commerce-tamil.onrender.com/login" method="post">
+      <form action="">
         EMAIL : <input type="email" id="username" name="Username" onChange={handleChange} required />
         <br />
         <br />
