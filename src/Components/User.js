@@ -1,10 +1,11 @@
 import {Link} from 'react-router-dom'
 import {useState} from 'react';
+import {useNavigate} from "react-router-dom";
 import axios from 'axios';
 export const Register = () => {
   const [data,setData]=useState([]);
   console.log("login response :",data)
-  
+  const navigate=useNavigate();
 //   useEffect(()=>{
 //     axios
 //          .post("https://e-commerce-tamil.onrender.com/register")
@@ -22,6 +23,7 @@ export const Register = () => {
   const handleClick = () => {
     userData.name = state;
     console.log(userData);
+    navigate('/user/login')
   };
   const handleCheck = (e) => {
     setState1(e.target.value);
@@ -31,6 +33,7 @@ export const Register = () => {
       alert("Successfully logged-in");
     } else {
       alert("Invalid Data");
+      navigate('/user/register')
     }
   };
   return (
