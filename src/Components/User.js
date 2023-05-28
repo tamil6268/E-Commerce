@@ -1,7 +1,10 @@
 import {Link} from 'react-router-dom'
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 import {useNavigate} from "react-router-dom";
 import axios from 'axios';
+  
+const userData = {};
+
 export const Register = () => {
   const [data,setData]=useState([]);
   console.log("login response :",data)
@@ -14,17 +17,7 @@ export const Register = () => {
 //             setData(res);
 //          })
 //   },[data])
-  const userData = {};
   const [state, setState] = useState("");
-  const [state1, setState1] = useState("");
-  const handleChange = (e) => {
-    setState(e.target.value);
-  };
-  const handleClick = () => {
-    userData.name = state;
-    console.log(userData);
-    navigate('/user/login')
-  };
   const handleCheck = (e) => {
     setState1(e.target.value);
   };
@@ -57,6 +50,15 @@ export const Register = () => {
   );
 };
 export const Login = () => {
+  const [state1, setState1] = useState("");
+  const handleChange = (e) => {
+    setState(e.target.value);
+  };
+  const handleClick = () => {
+    userData.name = state;
+    console.log(userData);
+    navigate('/user/login')
+  };
   return (
     <div id="user">
     <div id="pageLog">
