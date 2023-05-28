@@ -23,10 +23,10 @@ const Products = () => {
       console.log("Passing to the Slice by Action Creator",item)
        dispatch(AddingtoCart(item))
     }
-    const handleBuy=(item)=>{
-      // navigate(`/Orders/${item.id}`, { state: { item } })
-      alert("Order Placed ---> Order Id :TX70JUD_U1QX09")
-    }
+    // const handleBuy=(item)=>{
+    //   // navigate(`/Orders/${item.id}`, { state: { item } })
+    //   alert("Order Placed ---> Order Id :TX70JUD_U1QX09")
+    // }
     return(
       <div id="prodectDetails">
         <div >
@@ -37,10 +37,10 @@ const Products = () => {
             <p>{data.Catagory}</p>
             <div id="Rating"><span>Rating - {<Ratings/>} </span></div>
             <h3 id="OfferPrice"><span style={{color:"red"}}>Offer Price </span>$ {data.New_Price} /-</h3>
-            <h3 id="oprice"><span style={{color:"green"}}>Raw Price </span> $ {data.New_Price} /-</h3>
+            <h3 id="oprice"  style={{color:"gray"}}><span style={{color:"green"}}>Raw Price </span> $ {data.New_Price} /-</h3>
             <div>
             <button id="cart1" onClick={()=>AddtoCart(data)} >Add To Cart</button>
-            <button id="cart" onClick={()=>handleBuy(data)}>Buy Now</button>
+            {/* <button id="cart" onClick={()=>handleBuy(data)}>Buy Now</button> */}
             </div>
         </div>
       </div>

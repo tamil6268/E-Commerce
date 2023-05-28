@@ -47,7 +47,7 @@ export const Login = () => {
         <br />
         <input type="submit" value="Login" id="cart1"/>
         <input type="reset" value="Reset" id="cart"/>
-        <div><Link to="/user/register">register</Link> | <Link>forget password</Link></div>
+        <div><Link to="/user/register">register</Link></div>
       </form>
     </div></div>
   );
